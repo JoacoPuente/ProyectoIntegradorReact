@@ -1,5 +1,5 @@
 import React from "react";
-import { TitleWithImageComponent } from "../../components/TitleWithImage/TitleWithImageComponent";
+import { TitleWithImageComponent } from "../../components/titlewithimage/TitleWithImageComponent";
 import { CategoryWidgetComponent } from "../../components/categories/categoryWidget/CategoryWidgetComponent";
 import { ProductWidgetComponent } from "../../components/products/productsWidget/ProductWidgetComponent";
 
