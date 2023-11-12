@@ -1,6 +1,6 @@
 import React from "react";
 import { categories } from "../../../data/categories";
-import { CategoryCardComponent } from "../categoryCard/categoryCardComponent";
+import { CategoryCardComponent } from "../categoryCard/CategoryCardComponent";
 
 export const CategoryWidgetComponent = () => {
   return (
