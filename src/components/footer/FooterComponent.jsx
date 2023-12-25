@@ -13,7 +13,7 @@ export const FooterComponent = () => {
       <div className="flex flex-col xl:justify-between xl:flex-row">
         <div>
           <img src={Logo} alt="Logo" className="w-12 rounded-md" />
-          <p className="mt-8">Las mejores paletas de helado</p>
+          <p className="mt-8">Seguinos en nuestras redes</p>
           <div className="flex text-[#EDF2FB] mt-8 text-2xl gap-8">
             <a href="#">
               {" "}

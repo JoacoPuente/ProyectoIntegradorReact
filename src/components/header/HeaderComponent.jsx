@@ -5,20 +5,22 @@ import {
   faUser,
   faCartShopping,
   faBars,
+  faLessThan,
 } from "@fortawesome/free-solid-svg-icons";
+import { MenuButton } from "../menuButton/MenuButton";
+import { Navbar } from "../navbar/Navbar";
 
 export const HeaderComponent = () => {
   return (
     <header className="fixed flex justify-center w-full h-16 bg-[#EDF2FB] z-50 top-0 drop-shadow-xl">
       <div className="container flex items-center justify-between max-w-screen-xl px-8 py-4 lg:justify-between">
-        <div className="text-2xl text-[#ABC4FF] lg:hidden mr-9">
-          <FontAwesomeIcon icon={faBars} />
-        </div>
+        <MenuButton />
         <div className="inline-block mx-auto lg:mx-0">
           <img src={Logo} alt="Logo" className="w-12 rounded-lg" />
         </div>
-        <nav>
-          <ul className=" hidden lg:flex gap-6 text-[#ABC4FF] font-semibold text-lg ">
+        <Navbar />
+        {/* <nav>
+          <ul className="lg:flex gap-6 text-[#ABC4FF] font-semibold text-lg hidden">
             <li>
               <a
                 href="#"
@@ -56,7 +58,7 @@ export const HeaderComponent = () => {
               </a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
         <div className="flex gap-5 text-xl text-[#ABC4FF]">
           <a
             href="#"

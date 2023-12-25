@@ -1,16 +1,14 @@
 import React from "react";
-import { Header } from "../layout/home/header";
-import { Hero } from "../layout/home/hero";
-import { Products } from "../layout/home/products";
-import { Footer } from "../layout/home/footer";
+import { HeaderComponent } from "../components/header/HeaderComponent";
+import { HeroComponent } from "../components/hero/HeroComponent";
+import { FooterComponent } from "../components/footer/FooterComponent";
 
 export const Home = () => {
   return (
     <div>
-      <Header />
-      <Hero />
-      <Products />
-      <Footer />
+      <HeaderComponent />
+      <HeroComponent />
+      <FooterComponent />
     </div>
   );
 };

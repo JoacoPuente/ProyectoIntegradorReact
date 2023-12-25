@@ -1,0 +1,21 @@
+import React from "react";
+import { useContext } from "react";
+import { MenuContext } from "../../context/MenuContext";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+export const MenuButton = () => {
+  const { isMenuOpen, toggleMenu } = useContext(MenuContext);
+  return (
+    <button
+      onClick={toggleMenu}
+      className="text-2xl text-[#ABC4FF] lg:hidden mr-9" // Añade tus clases de Tailwind aquí
+    >
+      {isMenuOpen ? (
+        <FontAwesomeIcon icon={faTimes} />
+      ) : (
+        <FontAwesomeIcon icon={faBars} />
+      )}
+    </button>
+  );
+};

@@ -1,4 +1,5 @@
 import React from "react";
+3;
 
 export const ProductCardComponent = ({ img, title, desc, price }) => {
   return (
