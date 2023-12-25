@@ -1,5 +1,5 @@
 import "./App.css";
-import { Home } from "./screens/Home";
+import { Home } from "./screens/Home.jsx";
 import { About } from "./screens/about";
 import { Contact } from "./screens/contact";
 import { Products } from "./screens/products";
