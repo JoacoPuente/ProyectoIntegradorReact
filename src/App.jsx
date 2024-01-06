@@ -7,7 +7,8 @@ import { Products } from "./screens/products";
 function App() {
   return (
     <>
-      <Home />
+      {/* <Home /> */}
+      <About />
     </>
   );
 }
