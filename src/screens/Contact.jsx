@@ -1,10 +1,10 @@
 import React from "react";
-import { ContactComponent } from "../components/contact/ContactComponent";
+import { Contact } from "../components/contact/Contact";
 
 export const Contact = () => {
   return (
     <div>
-      <ContactComponent />
+      <Contact />
     </div>
   );
 };

@@ -7,7 +7,7 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
-export const FooterComponent = () => {
+export const Footer = () => {
   return (
     <div className="bg-[#ABC4FF] text-[#EDF2FB] w-full px-8 pb-8 pt-32">
       <div className="flex flex-col xl:justify-between xl:flex-row">

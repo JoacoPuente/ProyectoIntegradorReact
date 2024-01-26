@@ -1,6 +1,6 @@
 import React from "react";
 import { products } from "../../../data/products";
-import { ProductCardComponent } from "../productsCard/ProductCardComponent";
+import { ProductCard } from "../productsCard/ProductCard";
 
 export const ProductWidgetComponent = () => {
   return (
@@ -9,7 +9,7 @@ export const ProductWidgetComponent = () => {
       <div className="max-w-screen-xl px-8 ">
         <div className="flex flex-wrap justify-center gap-16 my-16">
           {products.map((item) => (
-            <ProductCardComponent key={item.id} {...item} />
+            <ProductCard key={item.id} {...item} />
           ))}
         </div>
       </div>

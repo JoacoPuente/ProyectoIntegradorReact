@@ -1,10 +1,10 @@
 import React from "react";
-import { TitleWithImageComponent } from "../components/titleWithImage/TitleWithImageComponent";
+import { TitleWithImage } from "../components/titleWithImage/TitleWithImage";
 
 export const About = () => {
   return (
     <div>
-      <TitleWithImageComponent />
+      <TitleWithImage />
     </div>
   );
 };

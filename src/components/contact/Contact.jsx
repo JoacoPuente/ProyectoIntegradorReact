@@ -7,7 +7,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export const ContactComponent = () => {
+export const Contact = () => {
   const [agreed, setAgreed] = useState(false);
 
   return (

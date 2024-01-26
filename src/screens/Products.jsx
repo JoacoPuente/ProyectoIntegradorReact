@@ -1,12 +1,12 @@
 import React from "react";
-import { CategoryWidgetComponent } from "../components/categories/categoryWidget/CategoryWidgetComponent";
-import { ProductWidgetComponent } from "../components/products/productsWidget/ProductWidgetComponent";
+import { CategoryWidget } from "../components/categories/categoryWidget/CategoryWidget";
+import { ProductWidget } from "../components/products/productsWidget/ProductWidget";
 
 export const Products = () => {
   return (
     <div>
-      <CategoryWidgetComponent />
-      <ProductWidgetComponent />
+      <CategoryWidget />
+      <ProductWidget />
     </div>
   );
 };

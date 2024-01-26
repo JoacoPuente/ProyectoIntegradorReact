@@ -1,6 +1,6 @@
 import React from "react";
 
-export const CategoryCardComponent = ({ img, title, category }) => {
+export const CategoryCard = ({ img, title, category }) => {
   return (
     <div className="relative overflow-hidden rounded-full w-48 h-48 border-[#CCDBFD] border-2 shadow-xl">
       <img

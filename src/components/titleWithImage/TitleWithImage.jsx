@@ -1,7 +1,7 @@
 import React from "react";
 import PortadaProductos from "../../../src/assets/imgs/portadaProductos.jpg";
 
-export const TitleWithImageComponent = () => {
+export const TitleWithImage = () => {
   return (
     <div className=" bg-[#EDF2FB] flex items-center justify-center">
       <div className="flex flex-col items-center justify-center max-w-screen-xl px-8 text-center xl:justify-between xl:flex-row xl:text-left">

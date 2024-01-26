@@ -10,7 +10,7 @@ import {
 import { MenuButton } from "../menuButton/MenuButton";
 import { Navbar } from "../navbar/Navbar";
 
-export const HeaderComponent = () => {
+export const Header = () => {
   return (
     <header className="fixed flex justify-center w-full h-16 bg-[#EDF2FB] z-50 top-0 drop-shadow-xl">
       <div className="container flex items-center justify-between max-w-screen-xl px-8 py-4 lg:justify-between">

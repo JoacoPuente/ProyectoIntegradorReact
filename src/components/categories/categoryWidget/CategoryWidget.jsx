@@ -1,8 +1,8 @@
 import React from "react";
 import { categories } from "../../../data/categories";
-import { CategoryCardComponent } from "../categoryCard/CategoryCardComponent";
+import { CategoryCard } from "../categoryCard/CategoryCard";
 
-export const CategoryWidgetComponent = () => {
+export const CategoryWidgetC = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-[#EDF2FB] ">
       <div className=" w-1/2 h-1 bg-[#ABC4FF] rounded-lg"></div>
@@ -12,7 +12,7 @@ export const CategoryWidgetComponent = () => {
         </h3>
         <div className="flex flex-wrap justify-center mt-16 gap-14">
           {categories.map((item) => (
-            <CategoryCardComponent key={item.id} {...item} />
+            <CategoryCard key={item.id} {...item} />
           ))}
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import background from "../../../src/assets/imgs/portada.jpg";
 
-export const HeroComponent = () => {
+export const Hero = () => {
   return (
     <div className="h-[calc(100vh-4rem)] mt-16 relative flex justify-center items-center px-8 ">
       <div

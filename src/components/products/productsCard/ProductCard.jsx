@@ -1,7 +1,7 @@
 import React from "react";
 3;
 
-export const ProductCardComponent = ({ img, title, desc, price }) => {
+export const ProductCard = ({ img, title, desc, price }) => {
   return (
     <div className="overflow-hidden rounded-md shadow-md sm:max-w-md lg:max-w-xl xl:max-w-2xl bg-[#EDF2FB] border-[#CCDBFD] border-2 w-64">
       <img src={img} className="object-cover w-64 h-64 " alt={title} />
