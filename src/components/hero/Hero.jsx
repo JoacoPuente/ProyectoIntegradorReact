@@ -5,11 +5,11 @@ export const Hero = () => {
   return (
     <div className="h-[calc(100vh-4rem)] mt-16 relative flex justify-center items-center px-8 ">
       <div
-        className="absolute inset-0 px-8 bg-center bg-cover blur-sm"
+        className="absolute inset-0 px-8 bg-center bg-cover blur-sm "
         style={{ backgroundImage: `url(${background})` }}
       ></div>
       <div className="relative text-center py-14 bg-[#EDF2FB] rounded-md px-8 max-w-screen-xl">
-        <h1 className="text-3xl font-extrabold tracking-tight text-[#ABC4FF] sm:text-6xl ">
+        <h1 className="text-3xl font-extrabold tracking-tight text-[#ABC4FF] sm:text-6xl">
           Paletas de helado: Clásicas y sorprendentes🍦
         </h1>
         <p className="mt-6 sm:text-xl leading-8 text-[#ABC4FF] font-semibold text-lg">

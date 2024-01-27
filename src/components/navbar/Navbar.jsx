@@ -7,21 +7,33 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`flex items-center justify-center ${
-        ctx.isMenuOpen ? "translate-x-0" : "translate-x-full"
-      } md:transform-none fixed top-20 right-0 bg-black w-1/2 p-12 transition-all duration-500 md:static md:w-auto md:p-0 ${
-        ctx.isMenuOpen ? "block" : "hidden"
-      } md:block`}
+      className={`flex items-center justify-center fixed top-16 left-0 w-1/2 h-screen bg-waikawa-gray-800 lg:block lg:static lg:top-0 lg:w-auto lg:h-auto lg:bg-waikawa-gray-100
+    ${ctx.isMenuOpen ? "block" : "hidden"} `}
     >
-      <ul className="flex flex-col items-center justify-center gap-12 md:flex-row">
-        <li className="text-2xl text-white cursor-pointer hover:text-orange-600">
-          Home
+      <ul className="flex flex-col items-center m-4 text-2xl font-semibold gap-7 text-waikawa-gray-50 sm:text-3xl lg:flex-row lg:gap-6 lg:text-xl lg:text-waikawa-gray-500">
+        <li>
+          <a href="#" className="relative lg:hover:text-waikawa-gray-800 group">
+            Inicio
+            <span className="absolute w-full h-0.5 bg-[#5C6B94] bottom-0 left-1/2 transform -translate-x-1/2 origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+          </a>
         </li>
-        <li className="text-2xl text-white cursor-pointer hover:text-orange-600">
-          About
+        <li>
+          <a href="#" className="relative lg:hover:text-waikawa-gray-800 group">
+            Nosotros
+            <span className="absolute w-full h-0.5 bg-[#5C6B94] bottom-0 left-1/2 transform -translate-x-1/2 origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+          </a>
         </li>
-        <li className="text-2xl text-white cursor-pointer hover:text-orange-600">
-          Services
+        <li>
+          <a href="#" className="relative lg:hover:text-waikawa-gray-800 group">
+            Productos
+            <span className="absolute w-full h-0.5 bg-[#5C6B94] bottom-0 left-1/2 transform -translate-x-1/2 origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#" className="relative lg:hover:text-waikawa-gray-800 group">
+            Contacto
+            <span className="absolute w-full h-0.5 bg-[#5C6B94] bottom-0 left-1/2 transform -translate-x-1/2 origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+          </a>
         </li>
       </ul>
     </nav>
