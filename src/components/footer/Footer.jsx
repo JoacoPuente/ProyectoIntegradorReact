@@ -9,12 +9,12 @@ import {
 
 export const Footer = () => {
   return (
-    <div className="bg-[#ABC4FF] text-[#EDF2FB] w-full px-8 pb-8 pt-32">
+    <div className="w-full px-8 pt-32 pb-8 bg-waikawa-gray-800 text-waikawa-gray-50">
       <div className="flex flex-col xl:justify-between xl:flex-row">
         <div>
           <img src={Logo} alt="Logo" className="w-12 rounded-md" />
           <p className="mt-8">Seguinos en nuestras redes</p>
-          <div className="flex text-[#EDF2FB] mt-8 text-2xl gap-8">
+          <div className="flex gap-8 mt-8 text-2xl text-waikawa-gray-50">
             <a href="#">
               {" "}
               <FontAwesomeIcon icon={faInstagram} />
@@ -96,7 +96,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-24 border-t border-[#EDF2FB] pt-8">
+      <div className="pt-8 mt-24 border-t text-waikawa-gray-50">
         <p>&copy;2023 SaborWave. Todos los derechos reservados.</p>
       </div>
     </div>

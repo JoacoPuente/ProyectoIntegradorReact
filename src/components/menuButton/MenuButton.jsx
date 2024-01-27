@@ -9,7 +9,7 @@ export const MenuButton = () => {
   return (
     <button
       onClick={toggleMenu}
-      className="text-2xl text-[#ABC4FF] lg:hidden mr-9"
+      className="text-2xl text-waikawa-gray-500 lg:hidden mr-9"
     >
       {isMenuOpen ? (
         <FontAwesomeIcon icon={faTimes} />

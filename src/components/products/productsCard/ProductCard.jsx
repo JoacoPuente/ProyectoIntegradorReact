@@ -1,20 +1,17 @@
 import React from "react";
 3;
 
-export const ProductCard = ({ img, title, desc, price }) => {
+export const ProductCard = ({ img, title, desc, price, id }) => {
   return (
-    <div className="overflow-hidden rounded-md shadow-md sm:max-w-md lg:max-w-xl xl:max-w-2xl bg-[#EDF2FB] border-[#CCDBFD] border-2 w-64">
+    <div className="w-64 overflow-hidden border-2 rounded-md shadow-md sm:max-w-md lg:max-w-xl xl:max-w-2xl bg-waikawa-gray-50 border-waikawa-gray-500">
       <img src={img} className="object-cover w-64 h-64 " alt={title} />
-      <div className="flex flex-col p-4 text-[#ABC4FF] ">
+      <div className="flex flex-col p-4 text-waikawa-gray-800 ">
         <h4 className="mb-3 text-xl font-bold h-14">{title}</h4>
         <p className="h-20">{desc}</p>
         <span className="text-lg">${price}</span>
-        <a
-          href="#"
-          className="inline-block px-4 py-2 mt-2 text-center text-[#EDF2FB] bg-[#ABC4FF] rounded-md hover:bg-[#5C6B94]"
-        >
+        <button className="inline-block px-4 py-2 mt-2 text-center rounded-md text-waikawa-gray-50 bg-waikawa-gray-500 hover:bg-waikawa-gray-800">
           Sumar al carrito
-        </a>
+        </button>
       </div>
     </div>
   );

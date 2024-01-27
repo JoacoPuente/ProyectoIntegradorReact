@@ -1,3 +1,4 @@
+import especiales from "../assets/imgs/especiales.jpg";
 export const categories = [
   // {
   //   id: 1,
@@ -25,7 +26,7 @@ export const categories = [
   // },
   {
     id: 5,
-    img: "https://th.bing.com/th/id/OIG.KbffdyTr9kpPjcL9_.OO?w=173&h=173&c=6&r=0&o=5&pid=ImgGn",
+    img: especiales,
     title: "Especiales",
     category: "Especiales",
   },
