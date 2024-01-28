@@ -1,8 +1,10 @@
 import React from "react";
-import { categories } from "../../../data/categories";
+// import { categories } from "../../../data/categories";
 import { CategoryCard } from "../categoryCard/CategoryCard";
+import { useSelector } from "react-redux";
 
 export const CategoryWidget = () => {
+  const categories = useSelector((state) => state.categories.categories);
   return (
     <div className="flex flex-col items-center justify-center bg-waikawa-gray-100 ">
       <div className="w-1/2 h-1 rounded-lg bg-waikawa-gray-500"></div>

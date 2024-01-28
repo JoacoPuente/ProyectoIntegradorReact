@@ -34,7 +34,7 @@ export const products = [
   },
 ];
 
-export const TotalProdusct = products.length;
+export const TotalProducts = products.length;
 
 export const Products = products.reduce((acc, product) => {
   if (!acc[product.category]) {
