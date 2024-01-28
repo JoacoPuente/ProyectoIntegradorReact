@@ -1,9 +1,24 @@
 import React from "react";
 import { ProductCard } from "../productsCard/ProductCard";
 import { useSelector } from "react-redux";
+import { useState } from "react";
+import { useEffect } from "react";
+import { products } from "../../../data/products";
+import { TotalProducts } from "../../../data/products";
 
 export const ProductWidget = () => {
-  const products = useSelector((state) => state.products.products);
+  let products = useSelector((state) => state.products.products);
+
+  const selectedCategory = useSelector(
+    (state) => state.categories.selectedCategory
+  );
+
+  const totalProducts = useSelector((state) => state.products.totalProducts);
+
+  if (selectedCategory) {
+    products = { [selectedCategory]: products[selectedCategory] };
+  }
+
   return (
     <div className="flex flex-col items-center justify-center bg-waikawa-gray-100">
       <div className="w-1/2 h-1 rounded-lg bg-waikawa-gray-500"></div>

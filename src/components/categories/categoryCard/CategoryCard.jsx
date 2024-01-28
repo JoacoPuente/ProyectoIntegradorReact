@@ -1,8 +1,19 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { selectCategory } from "../../../redux/categories/categoriesSlice";
 
 export const CategoryCard = ({ img, title, category }) => {
+  const selectedCategory = useSelector(
+    (state) => state.categories.selectedCategory
+  );
+  const dispatch = useDispatch();
+
   return (
-    <button className="relative w-48 h-48 overflow-hidden border-2 rounded-full shadow-xl border-waikawa-gray-400">
+    <button
+      className="relative w-48 h-48 overflow-hidden border-2 rounded-full shadow-xl border-waikawa-gray-400"
+      selected={category === selectedCategory}
+      onClick={() => dispatch(selectCategory(category))}
+    >
       <img
         src={img}
         alt={category}

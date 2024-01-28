@@ -69,7 +69,7 @@ export const products = [
   },
   {
     id: 7,
-    title: "Trufa Tentadora",
+    title: "Paleta de Trufa Tentadora",
     img: PaletaTrufaTentadora,
     desc: "Exquisita mezcla de chocolate belga y trufa suave.",
     price: 3100,
@@ -125,7 +125,7 @@ export const products = [
   },
   {
     id: 14,
-    title: "Dulce Tentación",
+    title: "Paleta de Dulce Tentación",
     img: PaletaDulceTentacion,
     desc: "Dulce de leche con cobertura de chocolate amargo.",
     price: 3100,
@@ -141,7 +141,7 @@ export const products = [
   },
   {
     id: 16,
-    title: "Almendra Dulce",
+    title: "Paleta de Almendra Dulce",
     img: PaleteAlmendraDulce,
     desc: "Dulce de leche con trozos crujientes de almendra.",
     price: 3100,
