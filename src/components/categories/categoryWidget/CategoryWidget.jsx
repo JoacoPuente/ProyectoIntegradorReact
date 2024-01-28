@@ -1,7 +1,7 @@
 import React from "react";
-// import { categories } from "../../../data/categories";
 import { CategoryCard } from "../categoryCard/CategoryCard";
 import { useSelector } from "react-redux";
+import { Categories } from "../../../data/categories";
 
 export const CategoryWidget = () => {
   const categories = useSelector((state) => state.categories.categories);
@@ -12,7 +12,7 @@ export const CategoryWidget = () => {
         <h3 className="text-xl font-bold text-center sm:text-3xl text-waikawa-gray-500">
           Sabores
         </h3>
-        <div className="flex flex-wrap justify-center mt-16">
+        <div className="flex flex-wrap justify-center gap-4 mt-16">
           {categories.map((item) => (
             <CategoryCard key={item.id} {...item} />
           ))}

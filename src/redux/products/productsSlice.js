@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Products, TotalProducts } from "../../data/products";
+import { products, Products, TotalProducts } from "../../data/products";
 
 const INITIAL_STATE = {
   products: Products,
@@ -12,9 +12,6 @@ export const productsSlice = createSlice({
   reducers: {
     getProducts: (state) => {
       return state;
-    },
-    getFirstProduct: (state) => {
-      return state.products[0];
     },
   },
 });
