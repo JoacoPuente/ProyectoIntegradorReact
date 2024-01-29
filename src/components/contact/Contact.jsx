@@ -40,11 +40,12 @@ export const Contact = () => {
 
       if (isValid) {
         alert("Mensaje enviado");
+        console.log("bien");
 
         resetForm();
-      } else {
-        alert("Revise los datos antes de enviar");
       }
+      alert("Revise los datos antes de enviar");
+      console.log("mal");
     },
   });
 
