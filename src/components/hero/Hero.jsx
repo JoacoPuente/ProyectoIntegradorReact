@@ -8,7 +8,7 @@ export const Hero = () => {
         className="absolute inset-0 px-8 bg-center bg-cover blur-sm "
         style={{ backgroundImage: `url(${background})` }}
       ></div>
-      <div className="relative max-w-screen-xl px-8 text-center rounded-md py-14 bg bg-waikawa-gray-100">
+      <div className="relative max-w-screen-xl px-8 text-center rounded-md py-14 bg-waikawa-gray-100">
         <h1 className="text-3xl font-extrabold tracking-tight text-waikawa-gray-500 sm:text-6xl">
           Paletas de helado: Clásicas y sorprendentes🍦
         </h1>

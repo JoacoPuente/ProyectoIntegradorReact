@@ -5,6 +5,7 @@ import { Footer } from "../components/footer/Footer";
 import { ProductWidget } from "../components/products/productsWidget/ProductWidget";
 import { CategoryWidget } from "../components/categories/categoryWidget/CategoryWidget";
 import { Contact } from "../components/contact/Contact";
+import { Cart } from "../components/cart/Cart";
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
       <Header />
       <Hero />
       <Contact />
+      {/* <Cart /> */}
       <Footer />
     </div>
   );

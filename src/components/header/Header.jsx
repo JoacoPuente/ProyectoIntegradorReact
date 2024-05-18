@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { MenuButton } from "../menuButton/MenuButton";
 import { Navbar } from "../navbar/Navbar";
+import { Cart } from "../cart/Cart";
 
 export const Header = () => {
   return (
@@ -14,13 +15,11 @@ export const Header = () => {
           <img src={Logo} alt="Logo" className="w-12 rounded-lg" />
         </div>
         <Navbar />
-        <div className="flex gap-5 text-xl">
+        <div className="flex gap-5 ">
           <button className="duration-300 text-waikawa-gray-500 hover:text-waikawa-gray-800 transition-color">
             <FontAwesomeIcon icon={faUser} />
           </button>
-          <button className="duration-300 text-waikawa-gray-500 hover:text-waikawa-gray-800 transition-color">
-            <FontAwesomeIcon icon={faCartShopping} />
-          </button>
+          <Cart />
         </div>
       </div>
     </header>

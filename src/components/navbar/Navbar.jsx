@@ -7,7 +7,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`flex items-center justify-center fixed top-16 left-0 w-1/2 h-screen bg-waikawa-gray-800 lg:block lg:static lg:top-0 lg:w-auto lg:h-auto lg:bg-waikawa-gray-100
+      className={`flex items-center justify-center fixed top-16 left-0 w-4/6 h-screen bg-waikawa-gray-800 lg:block lg:static lg:top-0 lg:w-auto lg:h-auto lg:bg-waikawa-gray-100
     ${ctx.isMenuOpen ? "block" : "hidden"} `}
     >
       <ul className="flex flex-col items-center m-4 text-2xl font-semibold gap-7 text-waikawa-gray-50 sm:text-3xl lg:flex-row lg:gap-6 lg:text-xl lg:text-waikawa-gray-500">
