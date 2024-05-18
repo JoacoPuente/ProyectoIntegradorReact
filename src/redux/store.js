@@ -1,6 +1,5 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import persistReducer from "redux-persist/es/persistReducer";
-import persistStorage from "redux-persist/es/persistStore";
+import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import productsReducer from "./products/productsSlice";
 import categoriesReducer from "./categories/categoriesSlice";
@@ -17,10 +16,18 @@ const reducers = combineReducers({
   cart: cartReducer,
 });
 
-const persitedReducer = persistReducer(persistConfig, reducers);
+const persistedReducer = persistReducer(persistConfig, reducers);
 
-export const store = configureStore({
-  reducer: persitedReducer,
+const store = configureStore({
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: ["persist/PERSIST", "persist/REHYDRATE"],
+      },
+    }),
 });
 
-export const persistor = persistStorage(store);
+const persistor = persistStore(store);
+
+export { store, persistor };
