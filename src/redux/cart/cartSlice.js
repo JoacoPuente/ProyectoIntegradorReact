@@ -26,7 +26,6 @@ export const cartSlice = createSlice({
         ...state,
         cartItems: removeItemFromCart(state.cartItems, action.payload),
         shippingCost: resetShippingCost(state.cartItems),
-        // SHIPPING_COST
       };
     },
     clearCart: (state) => {

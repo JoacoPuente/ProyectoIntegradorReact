@@ -34,7 +34,6 @@ export const Contact = () => {
 
         alert("Mensaje enviado");
         formik.resetForm();
-        console.log("bien");
       } catch (validationErrors) {
         alert("Revise los datos antes de enviar");
       } finally {

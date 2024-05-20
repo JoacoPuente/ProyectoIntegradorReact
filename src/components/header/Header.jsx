@@ -16,7 +16,7 @@ export const Header = () => {
         </div>
         <Navbar />
         <div className="flex gap-5 ">
-          <button className="duration-300 text-waikawa-gray-500 hover:text-waikawa-gray-800 transition-color">
+          <button className="text-xl duration-300 text-waikawa-gray-500 hover:text-waikawa-gray-800 transition-color">
             <FontAwesomeIcon icon={faUser} />
           </button>
           <Cart />

@@ -12,8 +12,8 @@ export const Home = () => {
     <div>
       <Header />
       <Hero />
-      <Contact />
-      {/* <Cart /> */}
+      <CategoryWidget />
+      <ProductWidget />
       <Footer />
     </div>
   );
