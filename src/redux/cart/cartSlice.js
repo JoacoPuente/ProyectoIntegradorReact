@@ -41,10 +41,21 @@ export const cartSlice = createSlice({
         hidden: !state.hidden,
       };
     },
+    incrementQuantity: (state, action) => {
+      return {
+        ...state,
+        cartItems: addItemToCart(state.cartItems, action.payload),
+      };
+    },
   },
 });
 
-export const { addToCart, removeFromCart, clearCart, toggleHiddenCart } =
-  cartSlice.actions;
+export const {
+  addToCart,
+  removeFromCart,
+  clearCart,
+  toggleHiddenCart,
+  incrementQuantity,
+} = cartSlice.actions;
 
 export default cartSlice.reducer;

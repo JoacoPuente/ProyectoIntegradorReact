@@ -32,3 +32,7 @@ export const resetShippingCost = (cartItems, shippingCost) => {
   }
   return shippingCost;
 };
+
+export const deleteItemFromCart = (cartItems, id) => {
+  return cartItems.filter((item) => item.id !== id);
+};
