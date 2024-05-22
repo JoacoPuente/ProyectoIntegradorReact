@@ -3,6 +3,7 @@ import {
   addItemToCart,
   removeItemFromCart,
   resetShippingCost,
+  deleteItemFromCart,
 } from "./cart-utils";
 
 const INITIAL_STATE = {
@@ -47,6 +48,18 @@ export const cartSlice = createSlice({
         cartItems: addItemToCart(state.cartItems, action.payload),
       };
     },
+    decrementQuantity: (state, action) => {
+      return {
+        ...state,
+        cartItems: removeItemFromCart(state.cartItems, action.payload),
+      };
+    },
+    deleteFromCart: (state, action) => {
+      return {
+        ...state,
+        cartItems: deleteItemFromCart(state.cartItems, action.payload),
+      };
+    },
   },
 });
 
@@ -56,6 +69,8 @@ export const {
   clearCart,
   toggleHiddenCart,
   incrementQuantity,
+  decrementQuantity,
+  deleteFromCart,
 } = cartSlice.actions;
 
 export default cartSlice.reducer;
