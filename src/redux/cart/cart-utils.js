@@ -26,13 +26,6 @@ export const removeItemFromCart = (cartItems, id) => {
   return cartItems.filter((item) => item.id !== productInCart.id);
 };
 
-export const resetShippingCost = (cartItems, shippingCost) => {
-  if (cartItems.length === 1 && cartItems[0].quantity === 1) {
-    return 0;
-  }
-  return shippingCost;
-};
-
 export const deleteItemFromCart = (cartItems, id) => {
   return cartItems.filter((item) => item.id !== id);
 };
