@@ -1,4 +1,3 @@
-import React from "react";
 import { TitleWithImage } from "../components/titleWithImage/TitleWithImage";
 import { Header } from "../components/header/Header";
 import { Footer } from "../components/footer/Footer";

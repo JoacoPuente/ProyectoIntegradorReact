@@ -1,4 +1,3 @@
-import React from "react";
 import chocolates from "../../assets/imgs/Chocolates.jpg";
 import crema from "../../assets/imgs/PoteCrema.jpg";
 import dulce from "../../assets/imgs/PoteDulce.jpg";

@@ -1,10 +1,5 @@
-import React from "react";
 import { ProductCard } from "../productsCard/ProductCard";
 import { useSelector } from "react-redux";
-import { useState } from "react";
-import { useEffect } from "react";
-import { products } from "../../../data/products";
-import { TotalProducts } from "../../../data/products";
 
 export const ProductWidget = () => {
   let products = useSelector((state) => state.products.products);

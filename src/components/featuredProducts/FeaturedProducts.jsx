@@ -1,10 +1,16 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import paleta1 from "../../assets/imgs/PaleteMarroc.jpg";
 import paleta2 from "../../assets/imgs/PaletaCanelayMiel.jpg";
 import paleta3 from "../../assets/imgs/PaletaCheesecake.jpg";
 import paleta4 from "../../assets/imgs/PaletaTiramisu.jpg";
 
 export const FeaturedProducts = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate("/products");
+  };
+
   const products = [
     { id: 1, name: "Paleta de Marroc", imageUrl: paleta1 },
     { id: 2, name: "Paleta de Canela y Miel", imageUrl: paleta2 },
@@ -34,7 +40,7 @@ export const FeaturedProducts = () => {
         </div>
         <div className="mt-8">
           <a
-            href="/productos"
+            onClick={handleButtonClick}
             className="inline-block px-6 py-3 text-lg rounded-full bg-waikawa-gray-500 text-waikawa-gray-50 hover:bg-waikawa-gray-800"
           >
             Ver todos los productos

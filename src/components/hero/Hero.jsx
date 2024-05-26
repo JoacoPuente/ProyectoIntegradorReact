@@ -1,7 +1,13 @@
-import React from "react";
 import background from "../../../src/assets/imgs/portada.jpg";
+import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate("/about");
+  };
+
   return (
     <div className="h-[calc(100vh-4rem)] mt-16 relative flex justify-center items-center px-8 ">
       <div
@@ -18,7 +24,7 @@ export const Hero = () => {
           gustos.
         </p>
         <button
-          href="#"
+          onClick={handleButtonClick}
           className="rounded-md bg-waikawa-gray-500 px-3.5 py-2.5 text-sm font-semibold text-waikawa-gray-50 shadow-sm hover:bg-waikawa-gray-800 mt-10"
         >
           Nosotros

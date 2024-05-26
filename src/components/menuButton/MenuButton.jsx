@@ -1,4 +1,3 @@
-import React from "react";
 import { useContext } from "react";
 import { MenuContext } from "../../context/MenuContext";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";

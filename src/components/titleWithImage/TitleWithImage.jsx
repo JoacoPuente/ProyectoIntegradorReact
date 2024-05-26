@@ -1,4 +1,3 @@
-import React from "react";
 import PortadaProductos from "../../../src/assets/imgs/portadaProductos.jpg";
 
 export const TitleWithImage = () => {

@@ -1,7 +1,5 @@
-import React from "react";
 import { CategoryCard } from "../categoryCard/CategoryCard";
 import { useSelector } from "react-redux";
-import { Categories } from "../../../data/categories";
 
 export const CategoryWidget = () => {
   const categories = useSelector((state) => state.categories.categories);
