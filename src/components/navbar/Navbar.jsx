@@ -1,5 +1,6 @@
 import React from "react";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { MenuContext } from "../../context/MenuContext";
 
 export const Navbar = () => {
@@ -12,28 +13,40 @@ export const Navbar = () => {
     >
       <ul className="flex flex-col items-center m-4 text-2xl font-semibold gap-7 text-waikawa-gray-50 sm:text-3xl lg:flex-row lg:gap-6 lg:text-xl lg:text-waikawa-gray-500">
         <li>
-          <a href="#" className="relative lg:hover:text-waikawa-gray-800 group">
+          <Link
+            to="/"
+            className="relative lg:hover:text-waikawa-gray-800 group"
+          >
             Inicio
             <span className="absolute w-full h-0.5 bg-[#5C6B94] bottom-0 left-1/2 transform -translate-x-1/2 origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="relative lg:hover:text-waikawa-gray-800 group">
+          <Link
+            to="/about"
+            className="relative lg:hover:text-waikawa-gray-800 group"
+          >
             Nosotros
             <span className="absolute w-full h-0.5 bg-[#5C6B94] bottom-0 left-1/2 transform -translate-x-1/2 origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="relative lg:hover:text-waikawa-gray-800 group">
+          <Link
+            to="/products"
+            className="relative lg:hover:text-waikawa-gray-800 group"
+          >
             Productos
             <span className="absolute w-full h-0.5 bg-[#5C6B94] bottom-0 left-1/2 transform -translate-x-1/2 origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="relative lg:hover:text-waikawa-gray-800 group">
+          <Link
+            to="/contact"
+            className="relative lg:hover:text-waikawa-gray-800 group"
+          >
             Contacto
             <span className="absolute w-full h-0.5 bg-[#5C6B94] bottom-0 left-1/2 transform -translate-x-1/2 origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

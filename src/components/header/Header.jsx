@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../../src/assets/imgs/logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { MenuButton } from "../menuButton/MenuButton";
 import { Navbar } from "../navbar/Navbar";
 import { Cart } from "../cart/Cart";

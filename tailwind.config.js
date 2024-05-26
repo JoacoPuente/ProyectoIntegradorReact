@@ -17,8 +17,6 @@ export default {
           900: "#414e6e",
           950: "#262c40",
         },
-
-        // Agrega más colores personalizados según sea necesario
       },
     },
   },

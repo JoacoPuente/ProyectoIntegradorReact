@@ -3,7 +3,7 @@ import PortadaProductos from "../../../src/assets/imgs/portadaProductos.jpg";
 
 export const TitleWithImage = () => {
   return (
-    <div className="flex items-center justify-center bg-waikawa-gray-100">
+    <div className="flex items-center justify-center mt-16 bg-waikawa-gray-100">
       <div className="flex flex-col items-center justify-center max-w-screen-xl px-8 text-center xl:justify-between xl:flex-row xl:text-left">
         <div className="w-1/2 my-16">
           <h2 className="text-2xl font-bold sm:text-4xl text-waikawa-gray-800">

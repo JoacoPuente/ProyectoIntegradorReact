@@ -21,7 +21,7 @@ export const Hero = () => {
           href="#"
           className="rounded-md bg-waikawa-gray-500 px-3.5 py-2.5 text-sm font-semibold text-waikawa-gray-50 shadow-sm hover:bg-waikawa-gray-800 mt-10"
         >
-          Ver productos
+          Nosotros
         </button>
       </div>
     </div>
