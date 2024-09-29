@@ -98,7 +98,7 @@ export const Cart = () => {
           openCart ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-start">
+        <div className="flex justify-start ">
           <button
             onClick={handleOpenCart}
             className="text-3xl text-waikawa-gray-50"

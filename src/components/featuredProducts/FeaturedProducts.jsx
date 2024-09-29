@@ -27,7 +27,7 @@ export const FeaturedProducts = () => {
           {products.map((product) => (
             <div
               key={product.id}
-              className="p-4 border-2 rounded-lg shadow-md bg-waikawa-gray-50 border-waikawa-gray-500 min"
+              className="p-4 border-2 rounded-lg shadow-md bg-waikawa-gray-50 border-waikawa-gray-500 "
             >
               <img
                 src={product.imageUrl}
