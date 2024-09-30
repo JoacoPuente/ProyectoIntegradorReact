@@ -5,14 +5,12 @@ import { useDispatch } from "react-redux";
 import { setCurrentUser } from "../../redux/user/userSlice";
 import { loginUser } from "../../axios/axios-user";
 import { Link, useNavigate } from "react-router-dom";
-import useRedirect from "../../hooks/useRedirect";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  useRedirect("/");
 
   const validationSchema = Yup.object({
     email: Yup.string()
